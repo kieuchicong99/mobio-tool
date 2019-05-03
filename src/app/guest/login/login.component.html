@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Đăng nhập</h5>
+            <div>
+              <div class="form-label-group">
+                <label for="username">Tên tài khoản</label>
+                <input [(ngModel)]="userLogin.username" type="email" id="username" class="form-control" placeholder="Tài khoản" required autofocus>
+              </div>
+
+              <div class="form-label-group">
+                  <label for="inputPassword">Mật Khẩu</label>
+                <input [(ngModel)]="userLogin.password" type="password" id="inputPassword" class="form-control" placeholder="Mật khẩu" required>
+              </div>
+
+              <div class="form-label-group">
+                    <label for="host">domain request</label>
+                    <input [(ngModel)]="userLogin.domain" type="text" id="host" class="form-control" placeholder="domain" required autofocus>
+                </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="login($event)">Đăng nhập</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

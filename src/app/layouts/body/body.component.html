@@ -1,0 +1,12 @@
+<div class="body">
+  <div class="nav-left">
+    <ul>
+      <li *ngFor="let item of functions" (click)="gotoLink($event,item)">
+        <span>{{item.title}}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

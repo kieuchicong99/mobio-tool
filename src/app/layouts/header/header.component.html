@@ -1,0 +1,11 @@
+<div class="row h-100">
+  <div class="col-6 d-flex justify-content-start align-items-center">
+      <img class="avatar" [src]="userInfo.merchant_avatar" />
+      <div class="name">{{userInfo.merchant_name}}</div>
+  </div>
+  <div class="col-6 d-flex justify-content-end align-items-center">
+    <img class="avatar" [src]="userInfo.avatar" />
+    <div class="name">{{userInfo.fullname}}</div>
+    <i class="icon-singout fa fa-sign-out" data-toggle="tooltip" title="logout"></i>
+  </div>
+</div>
